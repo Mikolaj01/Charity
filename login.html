@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Charity</title>
+  <link rel="stylesheet" href="login.css">
+  <link rel="icon" href="images/charity2.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6540122581.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="Top-container">
+
+
+    <div class="logo">
+      <img class="pic" src="images/charity2.png" alt="charity">
+      <h1 class="brand">HELPING THOSE IN NEED </h1>
+
+    </div>
+
+    <a href="fund.html" class="myButton">Make a donation</a>
+
+    <div class="top-nav">
+      <div class="dropdown">
+        <button class="dropbutton"><a href="index.html">Home </a></button>
+        <!-- Navigation Bar with the links and dropdown bar -->
+        <div class="drop">
+          <a href="login.html">Login</a>
+        </div>
+      </div>
+      <a href="fund.html">Donate </a>
+      <div class="dropdown">
+        <button class="dropbtn">Halls</button>
+        <div class="drop">
+          <a href="halls.html">Availability</a>
+          <a href="booking.html">Booking</a>
+        </div>
+      </div>
+
+      <a href="contact.html">Contact us</a>
+      <input type="text" placeholder="Search..">
+
+
+    </div>
+  </div>
+
+  <div class="Middle-container">
+
+
+    <div class="second">
+      <!-- Admin login linked to Javascript code -->
+      <h1>Admin Login</h1>
+      <img class="avatar" src="images/avatar.png" alt="avatar">
+      <form id="login" class="book">
+        <br>
+        <label class="uname"><b>Username:</b></label>
+        <input id="loginUname" type="text" placeholder="Enter username" required />
+        <br>
+        <br>
+        <label class="pass"><b>Password:</b></label>
+        <input id="loginPass" type="password" placeholder="Enter Password" required>
+        <br>
+        <br>
+        <button onclick="login()" class="Button2">Login</button>
+      </form>
+    </div>
+
+    
+  </div>
+
+  <!-- Footer displays social media account logos -->
+  <div class="Bottom-container">
+    <footer id="footer">
+      <i class="fab fa-twitter logo fa-lg"></i>
+      <i class="fab fa-facebook-f logo fa-lg"></i>
+      <i class="fab fa-instagram logo fa-lg"></i>
+      <i class="fas fa-envelope logo fa-lg"></i>
+      <p class="copy">© Copyright 2021 GoodDeeds</p>
+    </footer>
+
+
+  </div>
+
+  <script src="login.js" charset="utf-8"></script>
+</body>
+
+</html>

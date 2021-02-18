@@ -1,0 +1,373 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+hr {
+  border: solid #9d0191 1px;
+  width: 100%;
+  margin: 30px auto;
+}
+
+h2 {
+  position: relative;
+  clear: both;
+  text-align: center;
+  font-family: Roboto;
+  color: #8a007f;
+  font-size: 30px;
+}
+
+h3 {
+  text-align: center;
+  font-family: Roboto;
+  font-size: 25px;
+  color: #8a007f;
+}
+
+.Top-container {
+  padding-top: 50px;
+  background-color: white;
+  display: block;
+}
+
+/* Logo */
+.pic {
+  height: 130px;
+  width: 180px;
+  float: left;
+  position: relative;
+  top: -30px;
+  left: 70px
+}
+
+/* Main Title */
+.brand {
+  color: #9d0191;
+  font-family: Roboto;
+  position: relative;
+  text-align: center;
+  right: 5%;
+  margin: 0px 0px;
+}
+
+/* Donation Button base code taken from https://www.bestcssbuttongenerator.com/ the code was adapted to my preference. */
+.myButton {
+  position: relative;
+  float: right;
+  right: 40px;
+  top: -40px;
+  box-shadow: 0px 0px 0px 2px #fff200;
+  background: linear-gradient(to bottom, #fff200 5%, #fff200 100%);
+  background-color: #fff200;
+  border-radius: 10px;
+  border: 1px solid #fff200;
+  display: inline-block;
+  color: #9d0191;
+  font-family: Roboto;
+  font-weight: bold;
+  font-size: 19px;
+  padding: 12px 37px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #fff200;
+}
+
+.myButton:hover {
+  background: linear-gradient(to bottom, #fff200 5%, #fff200 100%);
+  background-color: #fff200;
+}
+
+.myButton:active {
+  position: relative;
+  bottom: 1px;
+}
+
+/* Navigation Bar and search bar base code taken from https://www.w3schools.com/howto/howto_css_searchbar.asp
+I adapted the code so it is formatted properly and looks the way I desire  */
+.top-nav {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #9d0191;
+  overflow: hidden;
+  clear: both;
+  padding-left: 50px;
+}
+
+.top-nav a {
+  float: left;
+  left: 100px;
+  padding: 20px 25px 20px 20px;
+  text-decoration: none;
+  color: #f2f2f2;
+}
+
+.top-nav a:hover, .dropdown:hover .dropbtn {
+  background-color: #ddd;
+  color: black;
+}
+
+.top-nav input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 10px;
+  margin-right: 16px;
+  font-size: 17px;
+  margin-right: 39px;
+}
+
+/* Dropdown Container base code taken from https://www.w3schools.com/css/css_dropdowns.asp then adapted to suit my website*/
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 20px 16px 20px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown .dropbutton {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: inherit;
+  font-family: inherit;
+  padding-left: 0px;
+  margin: 0;
+}
+
+/* Dropdown content  */
+.drop {
+  display: none;
+  position: absolute;
+  background-color: #9d0191;
+  min-width: 115px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.drop a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .drop {
+  display: block;
+}
+
+/* Middle Container */
+.title {
+  font-family: Roboto;
+  color: #9d0191;
+  margin-left: 4%;
+  margin-top: 4%;
+}
+
+.par {
+  font-family: Montserrat;
+  font-weight: bold;
+  color: #393e46;
+  margin-left: 4%;
+  margin-right: 17%;
+}
+
+/*  Three images all aligned code taken from https://www.w3schools.com/howto/howto_css_images_side_by_side.asp */
+/* Three image containers */
+.column {
+  float: left;
+  width: 27%;
+  margin-left: 4%;
+  margin-bottom: 4%;
+}
+
+/* Clear floats after image containers */
+.column::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.pic2 {
+  height: 210px;
+  border: 3px solid #8a007f;
+  opacity: 1;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+/* Base code taken from https://www.w3schools.com/howto/howto_css_image_overlay.asp it has been adapted and changed to suit my website and work with my images. */
+.column:hover .pic2 {
+  opacity: 0.3;
+}
+
+.column:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #8a007f;
+  color: white;
+  font-size: 14px;
+  padding: 16px 32px;
+  font-family: Montserrat;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 88%;
+  left: 17%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.middle2 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 88%;
+  left: 49%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.column:hover .middle2 {
+  opacity: 1;
+}
+
+.middle3 {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 88%;
+  left: 79%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.column:hover .middle3 {
+  opacity: 1;
+}
+
+/* Youtube video and title */
+.youtube {
+  margin-bottom: 3%;
+  margin-left: 29%;
+}
+
+/* Donation Form */
+.book {
+  margin-left: 30%;
+  border: 3px solid #9d0191;
+  width: 40%;
+  text-align: center;
+  margin-bottom: 9%;
+}
+
+.lab1 {
+  font-family: Montserrat;
+  font-weight: bold;
+  margin-left: -40px;
+}
+
+.lab2 {
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+.lab3 {
+  font-family: Montserrat;
+  font-weight: bold;
+  margin-left: -25px;
+}
+
+.lab4 {
+  font-family: Montserrat;
+  font-weight: bold;
+  margin-left: -75px;
+}
+
+.lab5 {
+  font-family: Montserrat;
+  font-weight: bold;
+  margin-left: -170px;
+}
+
+.lab6 {
+  font-family: Montserrat;
+  font-weight: bold;
+  margin-left: -110px;
+}
+
+.lab7 {
+  font-family: Montserrat;
+  font-weight: bold;
+  margin-left: -50px;
+}
+
+.lab8 {
+  font-family: Montserrat;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.lab {
+  font-family: Montserrat;
+  font-weight: bold;
+}
+
+/*  Similar code from previous button. */
+.Button2 {
+  margin-bottom: 2%;
+  box-shadow: 0px 0px 0px 2px #9d0190;
+  background: linear-gradient(to bottom, #9d0190 5%, #9d0190 100%);
+  background-color: #9d0190;
+  border-radius: 10px;
+  border: 1px solid #8a007f;
+  display: inline-block;
+  color: #fff200;
+  font-family: Roboto;
+  font-size: 19px;
+  padding: 12px 37px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #9d0190;
+}
+
+/* Bottom Container */
+.Bottom-container {
+  padding-top: 10%;
+  clear: both;
+}
+
+#footer {
+  padding: 5% 15%;
+  text-align: center;
+  background-color: #9d0191;
+}
+
+.fab {
+  padding-right: 2%;
+}
+
+.copy {
+  font-family: Montserrat;
+}
