@@ -12,7 +12,8 @@ function login() {
     alert("You are a Valid adminstrator");
 
     document.getElementById("login").action = "admin.html"
-  } else {
+  }
+  else {
     alert("Wrong account information");
     document.getElementById("loginform").action = "login.html"
   }
